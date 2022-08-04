@@ -18,17 +18,19 @@
       <div class="row">
         <div class="col-6 mx-auto">
           <h2>BC34</h2>
-          <div class="form-group">
-            <input type="text" class="form-control" id="number" placeholder="Nhập số"/>
+          <div class="form-group d-flex">
+            <input type="text" id="number" placeholder="Nhập số"/>
+            <button class="btn btn-success" id="btnThemSo">Thêm số</button>
+            <button id="btnXuatSo" class="btn btn-success">Xuất dãy số</button>
+            <button id="btnXoaso" class="btn btn-success">Xoá dãy số</button>
           </div>
-          <button class="btn btn-success" id="btnAddNum">Thêm số</button>
-          <button class="btn btn-success" id="btnSumArr">Tổng các số trong mảng</button>
-          <button class="btn btn-success" id="btnCountPosNum">Đếm các số dương</button>
-          <button class="btn btn-success" id="btnMaxNum">Tìm số lớn nhất</button>
-          <button class="btn btn-success" id="btnMinNum">Tìm số nhỏ nhất</button>
-          <button class="btn btn-success" id="btnLastEvenNum">Tìm số chẵn cuối cùng trong mảng</button>
+          <div class="form-group d-flex flex-column">
+            <button class="btn btn-success mt-2" id="btnTongSoDuong">Tổng số dương</button>
         </div>
+        <div id="notifiCation"></div>
+        <div id="notifiCation1"></div>
       </div>
+      <div id="notifiCation3"></div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -45,6 +47,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="./index.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
