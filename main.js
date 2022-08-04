@@ -34,3 +34,57 @@ function clearArray(a) {
    return a;
  }
 
+// tong so duong
+
+document.getElementById("btnTongSoDuong").onclick = function(){
+  var count=btnTongSoDuong(listNumber);
+  
+document.getElementById("notifiCation3").innerHTML ="Tổng số dương: "+ count;
+}
+function btnTongSoDuong(num){
+  var sum = 0;
+  if(listNumber.length === 0){
+      alert("vui long nhap so");
+      return;
+  }
+  for (var i = 0; i < num.length; i++){
+if(num[i] > 0){
+  sum += num[i];
+}
+  }
+  return sum;
+}
+
+// dem so duong
+document.getElementById("btnDemSoDuong").onclick = function(){
+  var count = btnDemSoDuong(listNumber);
+  
+document.getElementById("notifiCation3").innerHTML = "Có: "+count+" số dương";
+}
+function btnDemSoDuong(num){
+  var count = 0;
+  for(var i = 0; i < num.length; i++){
+      if(num[i] > 0){
+          count += 1;
+      }
+  }
+  return count;
+}
+
+//So nho nhat
+document.getElementById("btnSoNhoNhat").onclick = function(){
+  var count = btnSoNhoNhat(listNumber);
+  
+document.getElementById("notifiCation3").innerHTML = "Số nhỏ nhất là: "+count;
+}
+function btnSoNhoNhat(num){
+  var count = num[0];
+  for(var i = 0; i < num.length; i++){
+    if(count > num[i]){
+      count = num[i];
+    }
+  }
+  return count;
+}
+
+//So duong nho nhat
